@@ -1,4 +1,4 @@
-# leetcode1910.-Remove-All-Occurrences-of-a-Substring-
+#leetcode_js
 <pre>
 leetcode practice questions in javascript
 </pre>
