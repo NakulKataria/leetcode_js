@@ -1,0 +1,37 @@
+question 1 (1. Two Sum)
+Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+You can return the answer in any order.
+solution- pick the element from array
+- find complement =target-key
+- if complemet exists in array return address of key and complement
+
+
+question 2(11. Container With Most Water)
+You are given an integer array height of length n. There are n vertical lines drawn such that the two endpoints of the ith line are (i, 0) and (i, height[i]).
+Find two lines that together with the x-axis form a container, such that the container contains the most water.
+Return the maximum amount of water a container can store.
+solution-initialize pointer on 1st and last element and maxwater=0
+>repeat until the pointer cross each other-calculate currentWater compare from Max water and update max water 
+- move the pointer pointing to the shorter line 
+                                           
+
+question3(15. 3Sum)
+Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.
+
+solution- sort the array
+-fix one element (numm[i]) using loop and use 2 pointer to find other two element {such that sum of all 3 are 0}
+if sum =0 push triplet into result
+else if sum less than 0 shift left pointer inward
+else push right pointer inward 
+
+
+question4( 2342 max sum of pair with equal sum of digits)
+You are given a 0-indexed array nums consisting of positive integers. You can choose two indices i and j, such that i != j, and the sum of digits of the number nums[i] is equal to that of nums[j].
+Return the maximum value of nums[i] + nums[j] that you can obtain over all possible indices i and j that satisfy the conditions.
+
+solution-Use a helper function to calculate the sum of digits of a number
+-Use a Map to group numbers by their digit sum
+-Find Maximum Pair Sum in Each Group
+-Keep track of the maximum sum found across all groups.
+-If no valid pairs are found, return -1.
