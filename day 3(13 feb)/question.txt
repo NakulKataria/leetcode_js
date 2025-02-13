@@ -1,0 +1,21 @@
+question1(16 3sumclosest)
+Given an integer array nums of length n and an integer target, find three integers in nums such that the sum is closest to target.
+Return the sum of the three integers.You may assume that each input would have exactly one solution.
+
+solution-sort array
+-Iterate through each element as first number of the triplet.
+-Use two pointers (left and right) to find the best combination with the current element.
+-track athe sum that is closest to the target.
+
+
+question2(18 4sum)
+Given an array nums of n integers, return an array of all the unique quadruplets [nums[a], nums[b], nums[c], nums[d]] such that:
+0 <= a, b, c, d < n
+a, b, c, and d are distinct.
+nums[a] + nums[b] + nums[c] + nums[d] == target
+You may return the answer in any order.
+
+solution-sort the array
+-The first two loops (i and j) iterate through the array to pick the first two elements of the quadruplet.
+-Use two pointers (left and right) to find the remaining two elements that sum to the target.
+-Check and skip elements that are the same as the previous ones to ensure all quadruplets in the result are unique
