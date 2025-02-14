@@ -1,0 +1,10 @@
+Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+An input string is valid if:
+Open brackets must be closed by the same type of brackets.
+Open brackets must be closed in the correct order.
+Every close bracket has a corresponding open bracket of the same type.
+
+solution- Push opening brackets ((, {, [) onto the stack.
+-When encountering a closing bracket (), }, ]), check if it matches the most recent opening bracket (top of the stack). If it matches, pop the top element from the stack.
+-If a closing bracket is encountered and the stack is empty or the top element doesn’t match, the string is invalid.
+-at the end of the iteration, if the stack is not empty, the string is invalid because there are unmatched opening brackets.
