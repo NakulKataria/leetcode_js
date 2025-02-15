@@ -1,0 +1,13 @@
+You are given a nested list of integers nestedList. Each element is either an integer or a list whose elements may also be integers or other lists. Implement an iterator to flatten it.
+Implement the NestedIterator class:
+NestedIterator(List<NestedInteger> nestedList) Initializes the iterator with the nested list nestedList.
+int next() Returns the next integer in the nested list.
+boolean hasNext() Returns true if there are still some integers in the nested list and false otherwise.
+
+
+solution-Initialization (constructor):A helper function flatten recursively traverses the nestedList.
+It checks whether each element is an integer using isInteger().
+If true, it adds the integer to this.flattenedList.
+else, it calls flatten on the sublist using getList().
+-Next (next):Returns the integer at the current index and increments the index pointer.
+-Has Next (hasNext):Checks if the current index is within bounds of this.flattenedList.
