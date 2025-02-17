@@ -1,0 +1,6 @@
+Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
+
+
+solution-initalize left=0 right =array length-1
+-use binary search to locate the index
+-if (right<left) then return left
