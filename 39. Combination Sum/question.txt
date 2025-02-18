@@ -1,0 +1,12 @@
+question-
+Given an array of distinct integers candidates and a target integer target, return a list of all unique combinations of candidates where the chosen numbers sum to target. You may return the combinations in any order.
+The same number may be chosen from candidates an unlimited number of times. Two combinations are unique if the 
+frequency of at least one of the chosen numbers is different.
+The test cases are generated such that the number of unique combinations that sum up to target is less than 150 combinations for the given input.
+
+solution-The backtrack function explores all combinations of numbers starting from a specific index (start).
+-It maintains a running total and a combination list.
+-If the total equals the target, the current combination is valid and added to the result.
+-If the total exceeds the target, stop exploring further.
+-The loop iterates through candidates starting from the current index (start), ensuring that the same number can be reused (because the same index is passed in the recursive call).
+-After each recursive call, the last number is removed using combination.pop() to explore other possibilities.
