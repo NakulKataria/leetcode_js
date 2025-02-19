@@ -1,0 +1,10 @@
+question-
+Given the root of a binary tree, flatten the tree into a "linked list":
+The "linked list" should use the same TreeNode class where the right child pointer points to the next node in the list and the left child pointer is always null.
+The "linked list" should be in the same order as a pre-order traversal of the binary tree.
+
+
+solution-Save references to the left and right subtrees.
+-Attach the left subtree to the right of the current node.
+-Find the rightmost node of the new right subtree (formerly the left subtree) and attach the original right subtree to it.
+-Continue the process for the next nodes in the flattened tree.
