@@ -1,0 +1,11 @@
+question
+Given a collection of candidate numbers (candidates) and a target number (target), find all unique combinations in candidates where the candidate numbers sum to target.
+Each number in candidates may only be used once in the combination.
+
+
+
+solution-The candidates array is sorted to ensure duplicate elements are adjacent, making it easier to skip them.
+-The backtrack function iterates through candidates starting from the start index.
+-If the target becomes 0, the current combination is added to the results.
+-To ensure no duplicate combinations, we skip consecutive elements that are the same (if (i > start && candidates[i] === candidates[i - 1])).
+-The recursion explores all possible combinations and backtracks by removing the last added number.
