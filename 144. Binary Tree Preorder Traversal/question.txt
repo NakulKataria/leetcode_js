@@ -1,0 +1,7 @@
+question-Given the root of a binary tree, return the preorder traversal of its nodes' values.
+
+
+solution-You visit a node (write down its value).
+-You go left (if possible).
+-If there's no left child, you go right.
+-If you can’t go left or right, you backtrack (go back up) and continue exploring.
