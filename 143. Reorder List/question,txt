@@ -1,0 +1,7 @@
+143. Reorder List
+
+solution-Use the slow and fast pointer technique to find the middle node of the list.
+-slow moves one step at a time, while fast moves two steps.
+-When fast reaches the end, slow is at the middle.
+-Reverse the second half using the standard linked list reversal technique
+-Start merging nodes from both halves, alternating between them.
