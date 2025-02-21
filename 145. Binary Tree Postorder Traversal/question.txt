@@ -1,0 +1,5 @@
+question-Given the root of a binary tree, return the postorder traversal of its nodes' values.
+
+solution-Use a stack to keep track of nodes.
+-Use an additional stack (or reverse order) to process root after its children.
+-Reverse the order at the end to match left > right >root.
