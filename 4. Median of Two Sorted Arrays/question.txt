@@ -1,0 +1,8 @@
+question-Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays.
+
+solution-Ensure binary search runs on the smaller array (for efficiency).
+-Partition both arrays so that left half contains smaller elements.
+-maxLeftX <= minRightY
+-maxLeftY <= minRightX
+-If the combined length is odd, return Math.max(maxLeftX, maxLeftY).
+-If even, return the average of Math.max(maxLeftX, maxLeftY) and Math.min(minRightX, minRightY).
