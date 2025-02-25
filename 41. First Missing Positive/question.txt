@@ -1,0 +1,7 @@
+question-Given an unsorted integer array nums. Return the smallest positive integer that is not present in nums.
+You must implement an algorithm that runs in O(n) time and uses O(1) auxiliary space.
+
+solution-Mark numbers <= 0 and > n as out of range
+- Use index as a hash key   
+-Find the first missing index
+-return n + 1
