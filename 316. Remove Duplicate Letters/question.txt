@@ -1,0 +1,8 @@
+Given a string s, remove duplicate letters so that every letter appears once and only once. You must make sure your result is the smallest in lexicographical order among all possible results.
+
+
+solution
+Track last occurrences: Store the last index of each character in lastOccurrence so we know if it appears later.
+If a character is already in the stack, skip it.
+While the stack’s top character is greater than the current character and it appears later in the string, remove it to ensure lexicographical order.
+Return the stack as a string.
